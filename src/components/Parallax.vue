@@ -1,5 +1,5 @@
 <template>
-  <slot ref="child" :values="values" />
+  <slot ref="child" :values="state.values" />
 </template>
 
 <script setup>
@@ -21,7 +21,9 @@ const { configs } = defineProps({
     default: []
   },
 });
-const values = reactive({});
+const state = reactive({
+  values: {}
+});
 const child = ref(null);
 
 const calculateConfigActive = ({ config, scrollPosition }) => {
@@ -31,6 +33,8 @@ const calculateConfigActive = ({ config, scrollPosition }) => {
 const handleScroll = () => {
   const scrollPosition = window.scrollY;
   const variableCount = {};
+
+  const finalValues = { ...state.values };
 
   configs.forEach((config, i) => {
     const isConfigActive = calculateConfigActive({ config, scrollPosition });
@@ -44,18 +48,20 @@ const handleScroll = () => {
       const valueSize = endValue - startValue;
       // 25% of 100 = 25;
       // if starting from 200 then end result should be 225;
-      values[variable] = currentPoint / endPoint * valueSize + startValue;
+      finalValues[variable] = currentPoint / endPoint * valueSize + startValue;
     } else if (scrollPosition > end) {
-      values[variable] = endValue;
+      finalValues[variable] = endValue;
     } else if (variableCount[variable] === 1 && scrollPosition < start) {
-      values[variable] = startValue;
+      finalValues[variable] = startValue;
     }
-  })
+  });
+
+  state.values = finalValues;
 }
 
 onMounted(() => {
   [...configs].reverse().forEach(config => {
-    values[config.variable] = config.startValue;
+    state.values[config.variable] = config.startValue;
   });
   window.addEventListener('scroll', handleScroll);
 });
