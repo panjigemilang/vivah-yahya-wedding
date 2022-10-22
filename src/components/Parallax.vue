@@ -1,0 +1,66 @@
+<template>
+  <slot ref="child" :values="values" />
+</template>
+
+<script setup>
+import { onMounted, onUnmounted, reactive, ref } from 'vue';
+/*
+const configs = [
+  {
+    start: 0,
+    end: 1200,
+    variable: 'height',
+    startValue: 200,
+    endValue: 400,
+  }
+]
+*/
+const { configs } = defineProps({
+  configs: {
+    type: Array,
+    default: []
+  },
+});
+const values = reactive({});
+const child = ref(null);
+
+const calculateConfigActive = ({ config, scrollPosition }) => {
+  return scrollPosition >= config.start && scrollPosition <= config.end;
+};
+
+const handleScroll = () => {
+  const scrollPosition = window.scrollY;
+  const variableCount = {};
+
+  configs.forEach((config, i) => {
+    const isConfigActive = calculateConfigActive({ config, scrollPosition });
+    const { variable, start, end, startValue, endValue } = config;
+    if (!variableCount[variable]) variableCount[variable] = 0;
+    variableCount[variable]++;
+
+    if (isConfigActive) {
+      const endPoint = end - start;
+      const currentPoint = scrollPosition - start;
+      const valueSize = endValue - startValue;
+      // 25% of 100 = 25;
+      // if starting from 200 then end result should be 225;
+      values[variable] = currentPoint / endPoint * valueSize + startValue;
+    } else if (scrollPosition > end) {
+      values[variable] = endValue;
+    } else if (variableCount[variable] === 1 && scrollPosition < start) {
+      values[variable] = startValue;
+    }
+  })
+}
+
+onMounted(() => {
+  [...configs].reverse().forEach(config => {
+    values[config.variable] = config.startValue;
+  });
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
+</script>

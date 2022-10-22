@@ -1,0 +1,81 @@
+const configs = [
+  {
+    start: 0,
+    end: 700,
+    variable: 'bismillahOpacity',
+    startValue: 0,
+    endValue: 1,
+  },
+  {
+    start: 400,
+    end: 1000,
+    variable: 'bismillahYPosition',
+    startValue: 0,
+    endValue: -80,
+  },
+  {
+    start: 900,
+    end: 1500,
+    variable: 'salamOpacity',
+    startValue: 0,
+    endValue: 1,
+  },
+  {
+    start: 2000,
+    end: 2500,
+    variable: 'bismillahOpacity',
+    startValue: 1,
+    endValue: 0,
+  },
+  {
+    start: 2000,
+    end: 2500,
+    variable: 'bismillahYPosition',
+    startValue: -80,
+    endValue: -120,
+  },
+  {
+    start: 2000,
+    end: 2500,
+    variable: 'salamOpacity',
+    startValue: 1,
+    endValue: 0,
+  },
+  {
+    start: 2000,
+    end: 2500,
+    variable: 'salamYPosition',
+    startValue: 0,
+    endValue: -40,
+  },
+  {
+    start: 2500,
+    end: 3200,
+    variable: 'maksudOpacity',
+    startValue: 0,
+    endValue: 1,
+  },
+  {
+    start: 2500,
+    end: 3200,
+    variable: 'maksudSize',
+    startValue: .5,
+    endValue: 1,
+  },
+  {
+    start: 3500,
+    end: 3800,
+    variable: 'maksudOpacity',
+    startValue: 1,
+    endValue: 0,
+  },
+  {
+    start: 3500,
+    end: 3800,
+    variable: 'maksudSize',
+    startValue: 1,
+    endValue: 1.5,
+  },
+]
+
+export default configs;
