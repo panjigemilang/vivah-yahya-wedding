@@ -2,7 +2,7 @@
   <section class="bg-[#fffbfa] relative">
     <div class="text-center pt-10 absolute w-full max-w-[480px] blink">scroll down</div>
     <div class="content-bg w-full h-[5000px]"/>
-    <div class="content-bg-green w-full" :class="`h-[${withGallery ? 8000 : 4000}px]`" />
+    <div class="content-bg-green w-full" :style="{ height: `${withGallery ? 8000 : 4000}px`}" />
     <Pray />
     <Profile />
     <Date />
