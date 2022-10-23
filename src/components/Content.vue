@@ -29,4 +29,12 @@ import Send from './Send.vue';
   background-attachment: fixed;
   opacity: .1;
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  .content-bg {
+    background: #fef4f3;
+  }
+  .content-bg-green {
+    background: #fef4f3
+  }
+}
 </style>
