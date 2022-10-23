@@ -11,17 +11,17 @@
       <h3 :style="{
         opacity: bismillahOpacity,
         transform: `translateY(${bismillahYPosition}px)`
-      }" class="text-3xl absolute p-5">
+      }" class="text-3xl absolute p-5 text-[#ab7029]">
         بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
       </h3>
       <div :style="{
         opacity: salamOpacity,
         transform: `translateY(${salamYPosition}px)`
-      }" class="absolute p-5">Assalamu'alaikkum Warahmatullahi Wabarakatuh</div>
+      }" class="w-[300px] absolute p-5">Assalamu'alaikkum Warahmatullahi Wabarakatuh</div>
       <div :style="{
         opacity: maksudOpacity,
         transform: `scale(${maksudSize})`
-      }" class="absolute p-5">Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud menyelenggarakan resepsi
+      }" class="w-[300px] absolute p-5">Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud menyelenggarakan resepsi
         pernikahan putra putri kami</div>
     </section>
   </Parallax>

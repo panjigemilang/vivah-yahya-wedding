@@ -10,16 +10,16 @@
         opacity: bothOpacity,
         transform: `translateX(${akadTranslateX}px)`
       }">
-        <div class="text-3xl">Akad</div>
-        <div>Jumat, 4 November 2022</div>
+        <div class="text-5xl text-[#ab7029] font-bold wedding-font">Akad</div>
+        <div class="mt-10">Jumat, 4 November 2022</div>
         <div>08:00 s.d Selesai</div>
       </div>
-      <div class="w-full mt-10" :style="{
+      <div class="w-full mt-16" :style="{
         opacity: bothOpacity,
         transform: `translateX(${resepsiTranslateX}px)`
       }">
-        <div class="text-3xl">Resepsi</div>
-        <div>Sabtu, 5 November 2022</div>
+        <div class="text-5xl text-[#ab7029] font-bold wedding-font">Resepsi</div>
+        <div class="mt-16">Sabtu, 5 November 2022</div>
         <div>08:00 s.d Selesai</div>
       </div>
       <div class="w-full mt-20 text-sm" :style="{
