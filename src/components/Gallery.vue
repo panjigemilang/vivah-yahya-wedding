@@ -34,7 +34,7 @@ const galllerySettings = galleryNames.map((name, i) => {
   });
 
   const finalSetting = {
-    url: `/images/gallery/${name}.jpeg`,
+    url: `/images/gallery/${name}.jpg`,
     name,
   }
 
