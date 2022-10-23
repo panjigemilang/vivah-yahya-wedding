@@ -76,6 +76,20 @@ const configs = [
     startValue: 1,
     endValue: 1.5,
   },
+  {
+    start: 0,
+    end: 700,
+    variable: 'separatorOpacity',
+    startValue: 0,
+    endValue: 1,
+  },
+  {
+    start: 4000,
+    end: 4500,
+    variable: 'separatorOpacity',
+    startValue: 1,
+    endValue: 0,
+  },
 ]
 
 export default configs;
