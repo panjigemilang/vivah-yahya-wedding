@@ -9,7 +9,7 @@
     <Date />
     <Galllery v-if="withGallery" />
     <Send />
-    <div class="mt-20 w-full wedding-font text-5xl text-center text-[#ab7029]">
+    <div class="mt-5 w-full wedding-font text-5xl text-center text-[#ab7029]">
       Wishes
     </div>
     <div class="mt-10 w-full relative h-[600px] overflow-hidden">
