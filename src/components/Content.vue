@@ -14,7 +14,7 @@
     </div>
     <div class="mt-10 w-full relative h-[600px] overflow-hidden">
       <div class="w-full z-20 absolute bottom-0" style="transform: translateY(-10rem);">
-        <Disqus class="w-full p-10" shortname="https-vivah-yahya-netlify-app" @ready="handleDisqusReady" />
+        <Disqus :lazy="false" class="w-full p-10" shortname="https-vivah-yahya-netlify-app" @ready="handleDisqusReady" />
       </div>
     </div>
   </section>
