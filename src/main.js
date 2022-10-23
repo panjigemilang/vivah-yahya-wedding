@@ -1,8 +1,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+// import VueDisqus from 'vue-disqus'
 
-createApp(App).mount('#app')
+createApp(App)
+  // .use(VueDisqus, { shortname: 'https-vivah-yahya-netlify-app' })
+  .mount('#app')
 
 function fallbackCopyTextToClipboard(text) {
   var textArea = document.createElement("textarea");

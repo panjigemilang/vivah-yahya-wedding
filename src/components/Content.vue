@@ -9,6 +9,14 @@
     <Date />
     <Galllery v-if="withGallery" />
     <Send />
+    <div class="mt-20 w-full wedding-font text-5xl text-center text-[#ab7029]">
+      Wishes
+    </div>
+    <div class="mt-10 w-full relative h-[600px] overflow-hidden">
+      <div class="w-full z-20 absolute bottom-0" style="transform: translateY(-10rem);">
+        <Disqus class="w-full p-10" shortname="https-vivah-yahya-netlify-app" @ready="handleDisqusReady" />
+      </div>
+    </div>
   </section>
 </template>
 
@@ -19,9 +27,15 @@ import Profile from './Profile.vue';
 import Date from './Date.vue';
 import Send from './Send.vue';
 import Galllery from './Gallery.vue';
+import { Disqus } from 'vue-disqus';
 
 const params = new URLSearchParams(window.location.search);
 const withGallery = ref(params.get('with-gallery') === 'yes');
+
+const handleDisqusReady = e => {
+  console.log(e);
+  console.log(document.querySelector('iframe[title="Disqus"]'))
+}
 </script>
 
 <style>

@@ -37,3 +37,7 @@ html, body {
     opacity: 1;
   }
 }
+
+#reactions {
+  display: none;
+}
