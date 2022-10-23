@@ -38,7 +38,7 @@
 import Parallax from './Parallax.vue';
 import dateParallaxConfigs from '../configs/date-parallax';
 
-const startingPoint = 6500;
+const startingPoint = 2800;
 const parallaxConfig = dateParallaxConfigs.map(config => ({
   ...config,
   start: config.start + startingPoint,

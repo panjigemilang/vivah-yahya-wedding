@@ -57,7 +57,7 @@
 import Parallax from './Parallax.vue';
 import profileParallaxConfigs from '../configs/profile-parallax';
 
-const startingPoint = 4500;
+const startingPoint = 1700;
 const parallaxConfig = profileParallaxConfigs.map(config => ({
   ...config,
   start: config.start + startingPoint,

@@ -20,7 +20,7 @@ import galleryParallaxConfigs from '../configs/gallery-parallax';
 
 console.log(galleryParallaxConfigs);
 
-const startingPoint = 9000; // 6500;
+const startingPoint = 3800; // 6500;
 const galleryNames = ['one', 'two', 'three', 'four'];
 const parallaxConfig = [];
 const galllerySettings = galleryNames.map((name, i) => {

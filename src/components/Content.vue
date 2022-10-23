@@ -1,8 +1,8 @@
 <template>
   <section class="bg-[#fffbfa] relative">
     <div class="text-center pt-10 absolute w-full max-w-[480px] blink">scroll down</div>
-    <div class="content-bg w-full h-[5000px]"/>
-    <div class="content-bg-green w-full" :style="{ height: `${withGallery ? 8000 : 4000}px`}" />
+    <div class="content-bg w-full h-[2200px]"/>
+    <div class="content-bg-green w-full" :style="{ height: `${withGallery ? 4800 : 1100}px`}" />
     <Pray />
     <Profile />
     <Date />
@@ -39,7 +39,7 @@ const withGallery = ref(params.get('with-gallery') === 'yes');
     background: #fef4f3;
   }
   .content-bg-green {
-    background: #fef4f3
+    background: white;
   }
 }
 </style>
