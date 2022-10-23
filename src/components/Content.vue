@@ -1,6 +1,6 @@
 <template>
   <section class="bg-[#fffbfa] relative overflow-hidden">
-    <div class="text-center pt-10 absolute w-full max-w-[480px] blink">scroll down</div>
+    <div class="text-center pt-20 absolute w-full max-w-[480px] blink">scroll down</div>
     <div class="content-bg w-full h-[2200px]"/>
     <div class="content-bg-green w-full" :style="{ height: '2000px'}" />
     <div v-if="withGallery" class="bg-black w-full" :style="{ height: '3000px', boxShadow: '0 -60px 34px 70px black'}" />

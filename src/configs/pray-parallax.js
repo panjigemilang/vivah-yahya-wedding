@@ -77,8 +77,8 @@ const configs = [
     endValue: 1.5,
   },
   {
-    start: 1700,
-    end: 2000,
+    start: 0,
+    end: 700,
     variable: 'separatorOpacity',
     startValue: 0,
     endValue: 1,
