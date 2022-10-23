@@ -4,7 +4,7 @@
       <img class="w-[250px]" src="/images/flower-2.jpeg"/>
     </div>
     <div class="absolute top-0">
-      <img class="w-[250px]" src="/images/flower-3.png"/>
+      <img class="w-[250px]" src="/images/flower-3.jpg"/>
     </div>
     <div class="text-center z-10">
       <h1 class="text-2xl">Undangan Pernikahan</h1>
