@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-screen flex justify-center items-center">
-    <div class="mx-7 p-5 rounded-3xl border border-[#ab7029]">
+    <div class="mx-7 p-7 rounded-3xl border border-[#ab7029]">
       <div class="text-[#ab7029] text-center wedding-font text-5xl">Wedding Gift</div>
       <div class="mt-20 text-center">
         Bagi keluarga dan sahabat yang ingin mengirimkan silakan mengirimkan melalui rekening berikut
