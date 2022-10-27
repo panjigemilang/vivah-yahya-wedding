@@ -12,7 +12,7 @@
     <div class="mt-5 w-full wedding-font text-5xl text-center text-[#ab7029]">
       Wishes
     </div>
-    <div class="mt-10 w-full relative h-[1000px]">
+    <div class="mt-10 w-full relative h-[1500px]">
       <div class="w-full z-20 absolute top-0">
         <Disqus :lazy="false" class="w-full p-10" shortname="https-vivah-yahya-netlify-app" @ready="handleDisqusReady" />
       </div>
