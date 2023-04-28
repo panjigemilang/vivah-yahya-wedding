@@ -4,7 +4,7 @@ import App from "./App.vue"
 // import VueDisqus from 'vue-disqus'
 
 createApp(App)
-  // .use(VueDisqus, { shortname: 'https-dhara-panji-netlify-app' })
+  // .use(VueDisqus, { shortname: 'https-pandha-wedding-netlify-app' })
   .mount("#app")
 
 function fallbackCopyTextToClipboard(text) {

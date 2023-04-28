@@ -10,14 +10,18 @@
       <div class="w-full z-20 absolute top-0">
         <Disqus
           :lazy="false"
-          class="w-full p-10"
-          shortname="https-dhara-panji-netlify-app"
+          class="w-full p-10 overflow-y-auto"
+          shortname="https-pandha-wedding-netlify-app"
           @ready="handleDisqusReady"
         />
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { Disqus } from "vue-disqus"
+</script>
 
 <style scoped>
 .content-bg {
