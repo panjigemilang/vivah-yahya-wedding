@@ -3,7 +3,7 @@
     class="top-0 h-screen flex justify-center items-center bg-white w-full relative"
   >
     <img
-      src="/images/envelope.jpg"
+      src="/images/envelope.JPG"
       alt="background"
       class="absolute top-0 left-0 w-full h-full"
     />
