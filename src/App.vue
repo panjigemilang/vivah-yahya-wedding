@@ -2,12 +2,14 @@
   <main class="relative max-w-lg m-auto" @click="handleClick">
     <component :is="Screen" />
     <Audio :opened="opened" />
+    <Contribution />
   </main>
 </template>
 
 <script setup>
 import { computed, ref } from "vue"
 import Audio from "./components/Audio.vue"
+import Contribution from "./components/Contribution.vue"
 import Envelope from "./components/Envelope.vue"
 import Content from "./components/Content.vue"
 

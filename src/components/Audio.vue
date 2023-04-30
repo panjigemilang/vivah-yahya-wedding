@@ -1,6 +1,6 @@
 <template>
   <button
-    class="h-8 w-8 fixed top-12 right-9 translate-x-1/2 cursor-pointer rounded-full border-2 flex items-center"
+    class="h-8 w-8 fixed top-12 right-9 translate-x-1/2 cursor-pointer rounded-full border-2 flex items-center z-30"
     :class="state.audioPaused ? 'border-gray-300' : 'border-green-400'"
     @click="playPause"
     v-if="opened"

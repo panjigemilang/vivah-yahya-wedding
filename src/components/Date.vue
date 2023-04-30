@@ -5,13 +5,26 @@
     <div class="content-bg absolute top-0 left-0 w-full h-screen" />
     <div class="w-full">
       <div class="relative text-5xl text-[#ab7029] font-bold wedding-font">
-        Akad & Resepsi
+        Akad
       </div>
       <div class="mt-14 text-[#2C3A6E]">
         Sabtu, <span class="font-bold"> 5 Agustus 2023 </span>
       </div>
       <div class="text-[#2C3A6E]">
         <span class="font-semibold"> 08:00 </span>
+        s.d
+        <span class="font-semibold"> 10:00 </span>
+      </div>
+      <div
+        class="relative mt-10 text-5xl text-[#ab7029] font-bold wedding-font"
+      >
+        Resepsi
+      </div>
+      <div class="mt-14 text-[#2C3A6E]">
+        Sabtu, <span class="font-bold"> 5 Agustus 2023 </span>
+      </div>
+      <div class="text-[#2C3A6E]">
+        <span class="font-semibold"> 10:00 </span>
         s.d
         <span class="font-semibold"> Selesai </span>
       </div>

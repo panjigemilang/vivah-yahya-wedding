@@ -3,6 +3,11 @@
     class="relative h-screen flex justify-center items-center text-center flex-col p-10 w-full max-w-lg m-auto"
   >
     <div class="content-bg absolute top-0 left-0 w-full h-screen z-0" />
+    <div
+      class="text-center pt-20 absolute bottom-14 w-full max-w-lg animate-pulse text-[#2C3A6E]"
+    >
+      Swipe Right →
+    </div>
     <div class="relative w-10/12">
       <img
         src="/images/flower-line.png"
