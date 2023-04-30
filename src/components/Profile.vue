@@ -3,52 +3,56 @@
     class="relative h-screen flex justify-center items-center flex-col p-10 w-full max-w-lg m-auto"
   >
     <div class="content-bg-green absolute top-0 left-0 w-full h-screen z-0" />
-    <div class="w-full flex flex-col justify-center items-center z-10">
-      <div class="flex justify-center items-center">
-        <div class="w-[120px] h-[200px] rounded-b-full overflow-hidden">
-          <img
-            class="object-cover object-top w-full h-full"
-            src="/images/ukhti.png"
-          />
+    <div class="grid grid-rows-[auto, 1rem, auto] items-center">
+      <div class="w-full flex flex-col justify-center items-center z-10">
+        <div class="flex justify-center items-center">
+          <div class="w-[120px] h-[200px] rounded-b-full overflow-hidden">
+            <img
+              class="object-cover object-top w-full h-full"
+              src="/images/ukhti.png"
+            />
+          </div>
+        </div>
+        <div class="mt-5 ml-5">
+          <div class="Target font-bold">
+            <h1 class="text-xl">Dhara Amalia Tanjung</h1>
+          </div>
+          <div class="mt-3 text-xs text-[#2C3A6E]">
+            <span class="font-bold"> Putri </span>
+            dari Bapak
+            <span class="font-semibold"> Amril Eddi Tanjung </span>
+            dan <br />
+            Ibu
+            <span class="font-semibold"> Irmayani </span>
+          </div>
         </div>
       </div>
-      <div class="mt-5 ml-5">
-        <div class="Target font-bold">
-          <h1 class="text-xl">Dhara Amalia Tanjung</h1>
-        </div>
-        <div class="mt-3 text-xs text-[#2C3A6E]">
-          <span class="font-bold"> Putri </span>
-          dari Bapak
-          <span class="font-semibold"> Amril Eddi Tanjung </span>
-          dan <br />
-          Ibu
-          <span class="font-semibold"> Irmayani </span>
-        </div>
+      <div
+        class="text-5xl my-10 font-light wedding-font text-[#2C3A6E] text-center"
+      >
+        &
       </div>
-    </div>
-
-    <div class="text-5xl my-10 font-light wedding-font text-[#2C3A6E]">&</div>
-
-    <div class="w-full flex flex-col justify-center items-center z-10">
-      <div class="mr-5 text-right">
-        <div class="Target font-bold">
-          <h1 class="text-xl">Panji Gemilang</h1>
+      <div class="w-full flex flex-col justify-center items-center z-10">
+        <div class="mr-5 text-right">
+          <div class="Target font-bold">
+            <h1 class="text-xl">Panji Gemilang</h1>
+          </div>
+          <div class="mt-3 text-xs text-[#2C3A6E]">
+            <span class="font-bold"> Putra </span>
+            dari Bapak
+            <span class="font-semibold"> Agus Hernowo </span>
+            dan <br />
+            Ibu
+            <span class="font-semibold"> Ita Eflinda </span>
+          </div>
         </div>
-        <div class="mt-3 text-xs text-[#2C3A6E]">
-          <span class="font-bold"> Putra </span>
-          dari Bapak
-          <span class="font-semibold"> Agus Hernowo </span>
-          dan <br />
-          Ibu
-          <span class="font-semibold"> Ita Eflinda </span>
-        </div>
-      </div>
-      <div class="flex mt-5 justify-center items-center">
-        <div class="w-[120px] h-[150px] rounded-b-full overflow-hidden">
-          <img
-            class="object-cover object-top w-full h-full"
-            src="/images/akhi.png"
-          />
+        <div class="flex mt-5 justify-center items-center">
+          <div class="w-[120px] h-[150px] rounded-b-full overflow-hidden">
+            <img
+              class="object-cover object-top w-full h-full"
+              src="/images/akhi.png"
+            />
+          </div>
         </div>
       </div>
     </div>
