@@ -11,8 +11,6 @@
       :pagination="{
         type: 'progressbar',
       }"
-      pagination-clickable="true"
-      effect="flip"
       ref="swiper"
     >
       <swiper-slide>
