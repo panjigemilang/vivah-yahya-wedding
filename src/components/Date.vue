@@ -29,14 +29,17 @@
         <span class="font-semibold"> Selesai </span>
       </div>
     </div>
-    <div class="w-full mt-20 text-sm flex justify-center items-center flex-col">
+    <div
+      class="relative w-full mt-4 text-sm flex flex-col justify-center items-center"
+    >
+      <img src="/images/location.png" alt="maps" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6 text-[#ab7029] animate-bounce"
+        class="w-6 h-6 text-[#ab7029] animate-bounce absolute top-28 left-24 z-20"
       >
         <path
           stroke-linecap="round"
@@ -49,7 +52,6 @@
           d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
         />
       </svg>
-
       <div class="mt-2 text-[#2C3A6E]">
         Gang Imam, Jalan Melanthon Siregar, Pematangsiantar
         <br />
