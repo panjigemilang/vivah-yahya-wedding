@@ -11,9 +11,6 @@
       :pagination="{
         type: 'progressbar',
       }"
-      @load="onSlideChange"
-      @scroll="onSlideChange"
-      @touchstart="onSlideChange"
     >
       <swiper-slide>
         <Pray :active-index="activeIndex" :idx="0" />
@@ -41,7 +38,7 @@
 import { register } from "swiper/element/bundle"
 // register Swiper custom elements
 register()
-import { ref } from "vue"
+import { onMounted, onUnmounted, reactive, ref } from "vue"
 import Pray from "./Pray.vue"
 import Profile from "./Profile.vue"
 import Date from "./Date.vue"
@@ -63,11 +60,30 @@ export default {
     const withoutGallery = ref(params.get("without-gallery") === "yes")
     const withoutSend = ref(params.get("without-send") === "yes")
     const activeIndex = ref()
-    const onSlideChange = () => {
-      activeIndex.value = document.querySelector(
-        ".swiper-initialized"
-      )?.swiper.activeIndex
+    const state = reactive({ xDown: null, yDown: null })
+    const onSlideChange = (delay) => {
+      if (!delay) {
+        activeIndex.value = document.querySelector(
+          ".swiper-initialized"
+        )?.swiper.activeIndex
+      } else {
+        return setTimeout(() => {
+          activeIndex.value = document.querySelector(
+            ".swiper-initialized"
+          )?.swiper.activeIndex
+        }, delay)
+      }
     }
+
+    onMounted(() => {
+      window.addEventListener("scroll", onSlideChange)
+      window.addEventListener("touchmove", () => onSlideChange(100))
+    })
+
+    onUnmounted(() => {
+      window.removeEventListener("scroll", onSlideChange)
+      window.removeEventListener("touchmove", () => onSlideChange(100))
+    })
 
     return {
       onSlideChange,

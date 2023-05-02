@@ -8,14 +8,20 @@
         class="w-full flex flex-col justify-center items-center z-10"
         :class="activeIndex === idx && 'fadeInLeft animation-delay-200'"
       >
-        <div class="flex justify-center items-center">
+        <div
+          class="relative mb-8 text-5xl text-[#ab7029] font-bold wedding-font"
+          :class="activeIndex === idx && 'fadeInDown'"
+        >
+          Mempelai
+        </div>
+        <!-- <div class="flex justify-center items-center">
           <div class="w-[120px] h-[200px] rounded-b-full overflow-hidden">
             <img
               class="object-cover object-top w-full h-full"
               src="/images/ukhti.png"
             />
           </div>
-        </div>
+        </div> -->
         <div class="mt-5 ml-5">
           <div class="Target font-bold">
             <h1 class="text-xl">Dhara Amalia Tanjung</h1>
@@ -52,14 +58,14 @@
             <span class="font-semibold"> Ita Eflinda </span>
           </div>
         </div>
-        <div class="flex mt-5 justify-center items-center">
+        <!-- <div class="flex mt-5 justify-center items-center">
           <div class="w-[120px] h-[150px] rounded-b-full overflow-hidden">
             <img
               class="object-cover object-top w-full h-full"
               src="/images/akhi.png"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -77,7 +83,7 @@ const { activeIndex, idx } = toRefs(props)
 
 <style>
 .content-bg-green {
-  background: url("/images/blue_petal.jpg") repeat;
+  background: url("/images/blue-petal.jpg") repeat;
   background-attachment: fixed;
   background-size: 650px;
   background-position: center;
