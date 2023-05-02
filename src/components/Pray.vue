@@ -1,12 +1,12 @@
 <template>
   <section
-    class="relative h-screen flex justify-center items-center text-center flex-col p-10 w-full max-w-lg m-auto"
+    class="relative h-screen flex justify-center items-center text-center flex-col p-2 md:p-5 lg:p-10 w-full max-w-lg m-auto"
   >
     <div class="content-bg absolute top-0 left-0 w-full h-screen z-0" />
     <div
       class="text-center pt-20 absolute bottom-14 w-full max-w-lg animate-pulse text-[#2C3A6E]"
     >
-      Swipe Right →
+      Geser ke kanan →
     </div>
     <div class="relative w-10/12">
       <img
@@ -15,14 +15,23 @@
         class="rotate-180 flying"
       />
     </div>
-    <div class="fadeInDown">
-      <h3 class="text-3xl p-5 text-[#ab7029]">
+    <div>
+      <h3
+        class="text-3xl p-5 text-[#ab7029]"
+        :class="activeIndex === idx && 'fadeInDown'"
+      >
         بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
       </h3>
-      <div class="w-[300px] text-[#2C3A6E] p-5 font-semibold z-10">
+      <div
+        class="w-[300px] text-[#2C3A6E] p-5 font-semibold z-10"
+        :class="activeIndex === idx && 'fadeInDown animation-delay-200'"
+      >
         Assalamu'alaikum Warahmatullahi Wabarakatuh
       </div>
-      <div class="w-[300px] text-[#2C3A6E] p-5 z-10">
+      <div
+        class="w-[300px] text-[#2C3A6E] p-5 z-10"
+        :class="activeIndex === idx && 'fadeInDown animation-delay-500'"
+      >
         Atas berkat Rahmat Allah Subhanahu wa ta'ala serta tidak lupa kami
         mengucapkan shalawat serta salam kepada rasul junjungan kita nabi
         Muhammad Shalallahu 'alaihi wassalam
@@ -37,10 +46,17 @@
   </section>
 </template>
 
+<script setup>
+import { toRefs } from "vue"
+
+const props = defineProps({
+  activeIndex: Number,
+  idx: Number,
+})
+const { activeIndex, idx } = toRefs(props)
+</script>
+
 <style scoped>
-.fadeInDown {
-  animation: fadeInDown 1.5s both;
-}
 .content-bg {
   background: url("/images/motif1.jpg") repeat;
   background-attachment: fixed;

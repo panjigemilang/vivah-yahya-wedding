@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative h-screen flex justify-center items-center text-center flex-col p-10 w-full max-w-lg m-auto"
+    class="relative h-screen flex justify-center items-center text-center flex-col p-2 md:p-5 lg:p-10 w-full max-w-lg m-auto"
   >
     <div class="content-bg absolute top-0 left-0 w-full h-screen z-0" />
     <div class="mt-5 w-full wedding-font text-5xl text-center text-[#ab7029]">

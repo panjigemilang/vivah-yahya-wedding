@@ -1,10 +1,13 @@
 <template>
   <section
-    class="relative h-screen flex justify-center items-center flex-col p-10 w-full max-w-lg m-auto"
+    class="relative h-screen flex justify-center items-center flex-col p-2 md:p-5 lg:p-10 w-full max-w-lg m-auto"
   >
     <div class="content-bg-green absolute top-0 left-0 w-full h-screen z-0" />
     <div class="grid grid-rows-[auto, 1rem, auto] items-center">
-      <div class="w-full flex flex-col justify-center items-center z-10">
+      <div
+        class="w-full flex flex-col justify-center items-center z-10"
+        :class="activeIndex === idx && 'fadeInLeft animation-delay-200'"
+      >
         <div class="flex justify-center items-center">
           <div class="w-[120px] h-[200px] rounded-b-full overflow-hidden">
             <img
@@ -32,7 +35,10 @@
       >
         &
       </div>
-      <div class="w-full flex flex-col justify-center items-center z-10">
+      <div
+        class="w-full flex flex-col justify-center items-center z-10"
+        :class="activeIndex === idx && 'fadeInRight animation-delay-500'"
+      >
         <div class="mr-5 text-right">
           <div class="Target font-bold">
             <h1 class="text-xl">Panji Gemilang</h1>
@@ -60,23 +66,13 @@
 </template>
 
 <script setup>
-import { reactive, toRefs, watch } from "vue"
+import { toRefs } from "vue"
 
 const props = defineProps({
-  index: Number,
-  activeSection: Number,
+  activeIndex: Number,
+  idx: Number,
 })
-
-const { index, activeSection } = toRefs(props)
-console.log("naon siah", activeSection)
-
-watch(
-  activeSection,
-  (val) => {
-    console.log("naon siah", val)
-  },
-  { deep: true }
-)
+const { activeIndex, idx } = toRefs(props)
 </script>
 
 <style>
@@ -88,12 +84,70 @@ watch(
   opacity: 0.1;
 }
 
+.fadeIn {
+  animation: fadeIn 1.5s both;
+}
+
+.fadeInDown {
+  animation: fadeInDown 1.5s both;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1.5s both;
+}
+
+.fadeInRight {
+  animation: fadeInRight 1.5s both;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms !important;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms !important;
+}
+
 @keyframes masked {
   0% {
     background-position: 0 0;
   }
   100% {
     background-position: -10000px 5000px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translatex(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatex(0px);
   }
 }
 
@@ -108,6 +162,7 @@ watch(
     transform: translatey(0px);
   }
 }
+
 .Target {
   z-index: 1;
 }

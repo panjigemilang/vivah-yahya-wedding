@@ -11,16 +11,21 @@
       :pagination="{
         type: 'progressbar',
       }"
-      ref="swiper"
+      @load="onSlideChange"
+      @scroll="onSlideChange"
+      @touchstart="onSlideChange"
     >
       <swiper-slide>
-        <Pray />
+        <Pray :active-index="activeIndex" :idx="0" />
       </swiper-slide>
       <swiper-slide>
-        <Profile />
+        <Profile :active-index="activeIndex" :idx="1" />
       </swiper-slide>
       <swiper-slide>
-        <Date />
+        <Date :active-index="activeIndex" :idx="2" />
+      </swiper-slide>
+      <swiper-slide>
+        <Location :active-index="activeIndex" :idx="3" />
       </swiper-slide>
       <swiper-slide>
         <Wishes />
@@ -36,12 +41,13 @@
 import { register } from "swiper/element/bundle"
 // register Swiper custom elements
 register()
-import { ref, onMounted, onUnmounted, reactive } from "vue"
+import { ref } from "vue"
 import Pray from "./Pray.vue"
 import Profile from "./Profile.vue"
 import Date from "./Date.vue"
 import Wishes from "./Wishes.vue"
 import Gallery from "./Gallery.vue"
+import Location from "./Location.vue"
 
 export default {
   components: {
@@ -50,18 +56,23 @@ export default {
     Date,
     Wishes,
     Gallery,
+    Location,
   },
   setup() {
     const params = new URLSearchParams(window.location.search)
     const withoutGallery = ref(params.get("without-gallery") === "yes")
     const withoutSend = ref(params.get("without-send") === "yes")
-    const state = reactive({
-      inMove: false,
-      inMoveDelay: 400,
-      activeSection: 0,
-      offsets: [],
-      touchStartY: 0,
-    })
+    const activeIndex = ref()
+    const onSlideChange = () => {
+      activeIndex.value = document.querySelector(
+        ".swiper-initialized"
+      )?.swiper.activeIndex
+    }
+
+    return {
+      onSlideChange,
+      activeIndex,
+    }
   },
 }
 </script>
