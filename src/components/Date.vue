@@ -9,7 +9,7 @@
           Akad
         </div>
         <div class="mt-14 text-[#2C3A6E]">
-          Sabtu, <span class="font-bold"> 5 Agustus 2023 </span>
+          Sabtu, <span class="font-bold"> 26 Agustus 2023 </span>
         </div>
         <div class="text-[#2C3A6E]">
           <span class="font-semibold"> 08:00 </span>
@@ -24,7 +24,7 @@
           Resepsi
         </div>
         <div class="mt-14 text-[#2C3A6E]">
-          Sabtu, <span class="font-bold"> 5 Agustus 2023 </span>
+          Sabtu, <span class="font-bold"> 26 Agustus 2023 </span>
         </div>
         <div class="text-[#2C3A6E]">
           <span class="font-semibold"> 10:00 </span>

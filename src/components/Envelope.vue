@@ -28,7 +28,7 @@
       />
       <div class="w-6/12 mx-auto text-[#e7b06c]">
         <div class="text-2xl font-semibold my-3 text-[#c99b63]">
-          05 AGUSTUS, 2023
+          26 AGUSTUS, 2023
         </div>
         <hr class="border border-dashed border-[#e7b06c] rounded-full w-full" />
       </div>
