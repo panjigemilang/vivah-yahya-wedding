@@ -12,9 +12,9 @@
           Sabtu, <span class="font-bold"> 26 Agustus 2023 </span>
         </div>
         <div class="text-[#2C3A6E]">
-          <span class="font-semibold"> 08:00 </span>
+          <span class="font-semibold"> 09:00 </span>
           s.d
-          <span class="font-semibold"> 10:00 </span>
+          <span class="font-semibold"> Selesai </span>
         </div>
       </div>
       <div :class="activeIndex === idx && 'fadeInDown animation-delay-200'">
@@ -27,7 +27,7 @@
           Sabtu, <span class="font-bold"> 26 Agustus 2023 </span>
         </div>
         <div class="text-[#2C3A6E]">
-          <span class="font-semibold"> 10:00 </span>
+          <span class="font-semibold"> 11:00 </span>
           s.d
           <span class="font-semibold"> Selesai </span>
         </div>
