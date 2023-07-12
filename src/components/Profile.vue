@@ -32,7 +32,7 @@
             <span class="font-semibold"> Amril Eddi Tanjung </span>
             dan <br />
             Ibu
-            <span class="font-semibold"> Irmayani </span>
+            <span class="font-semibold"> Irmayani Marpaung </span>
           </div>
         </div>
       </div>
