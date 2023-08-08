@@ -17,6 +17,11 @@
       <a href="https://www.vecteezy.com/free-vector/flowers"
         >Flowers Vectors by Vecteezy</a
       >
+      <a
+        href="https://www.flaticon.com/free-icons/wedding"
+        title="wedding icons"
+        >Wedding icons created by Freepik - Flaticon</a
+      >
     </div>
   </button>
 </template>
