@@ -1,6 +1,6 @@
 <template>
   <button
-    class="h-8 w-8 fixed bottom-4 right-9 translate-x-1/2 cursor-text rounded-full flex flex-col align-middle items-center z-30 opacity-30"
+    class="h-8 w-8 fixed bottom-4 left-0 translate-x-1/2 cursor-text rounded-full flex flex-col align-middle items-center z-30 opacity-30"
     @mouseover="hover = true"
     @mouseleave="hover = false"
   >
